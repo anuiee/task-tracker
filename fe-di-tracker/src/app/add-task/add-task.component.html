@@ -1,0 +1,11 @@
+<p>add-task works!</p>
+<form  #myForm="ngForm" ></form>
+<div class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Title" aria-label="First name" #title>
+    </div>
+    <div class="col">
+      <textarea type="text" rows="1" class="form-control" placeholder="Description" aria-label="Last name" #desc></textarea>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="onAddTask(title.value,desc.value)">Save</button>
